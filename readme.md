@@ -18,7 +18,7 @@ Portifólio, Sobre e Contato.
 - pages/portifolio.html, sobre.html, contato.html
 
 ## Acesso
-Hospedado no GitHub Pages: [link]
+Hospedado no GitHub Pages: https://iantassiotto.github.io/Loja_Gamer
 
 ## Autor
 Ian Felipe Tassiotto Gomes

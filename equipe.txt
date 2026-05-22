@@ -5,7 +5,7 @@ Integrantes:
 - Ian Felipe Tassiotto Gomes - RM: 570812
 
 GitHub Pages:
-https://[seu-usuario].github.io/CP3-web-front/
+https://iantassiotto.github.io/Loja_Gamer/
 
 Repositório GitHub:
 https://github.com/iantassiotto/Loja_Gamer
