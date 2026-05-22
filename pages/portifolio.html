@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portifólio de produtos da Arena Gamer — periféricos, hardware e jogos." />
+  <title>Portifólio | Arena Gamer</title>
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HEADER / NAV
+  ══════════════════════════════════════ -->
+  <header>
+    <div class="nav-container">
+
+      <a href="../index.html" class="logo">Arena<span>Gamer</span></a>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="portifolio.html">Portifólio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="cart-btn" aria-label="Carrinho de compras" title="Clique para zerar o carrinho">
+          🛒
+          <span class="cart-count hidden" aria-live="polite">0</span>
+        </button>
+        <button class="theme-toggle" aria-label="Alternar tema">☀️</button>
+        <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <h1>Nosso <span class="text-cyan">Portifólio</span></h1>
+      <p>Periféricos, hardware e jogos selecionados para elevar seu setup.</p>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         PRODUTOS — Cards com filtro
+    ══════════════════════════════════════ -->
+    <section aria-labelledby="produtos-title">
+      <div class="section-inner">
+
+        <h2 class="section-title" id="produtos-title">
+          Catálogo de <span class="accent">Produtos</span>
+        </h2>
+        <div class="divider"></div>
+
+        <!-- Filtros -->
+        <div class="filter-bar" role="group" aria-label="Filtrar por categoria">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="periferico">Periféricos</button>
+          <button class="filter-btn" data-filter="hardware">Hardware</button>
+          <button class="filter-btn" data-filter="jogo">Jogos</button>
+          <button class="filter-btn" data-filter="audio">Áudio</button>
+        </div>
+
+        <!-- Grid de produtos -->
+        <div class="products-grid">
+
+          <!-- Periféricos -->
+          <article class="product-card reveal" data-category="periferico">
+            <div class="product-badge">Best Seller</div>
+            <img src="../src/assets/Mouse RGB Pro X.avif" alt="Mouse RGB Pro X" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Periférico</p>
+              <h3 class="product-name">Mouse RGB Pro X</h3>
+              <p class="product-desc">Sensor óptico de 16.000 DPI, 6 botões programáveis, iluminação RGB 16M cores.</p>
+              <div class="product-footer">
+                <div>
+                  <span class="product-price-old">R$&nbsp;249,90</span>
+                  <span class="product-price">R$&nbsp;189,90</span>
+                </div>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🖱️">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-category="periferico">
+            <div class="product-badge new">Novo</div>
+            <img src="../src/assets/Teclado Mecânico NX-500.jpg" alt="Teclado Mecânico NX-500" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Periférico</p>
+              <h3 class="product-name">Teclado Mecânico NX-500</h3>
+              <p class="product-desc">Switch Blue, layout TKL, iluminação RGB por tecla, construção em alumínio.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;349,00</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="⌨️">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2" data-category="periferico">
+            <img src="../src/assets/Monitor 144Hz 1ms.jpg" alt="Monitor 144Hz 1ms" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Periférico</p>
+              <h3 class="product-name">Monitor 144Hz 1ms</h3>
+              <p class="product-desc">27" Full HD, painel IPS, taxa de atualização 144Hz, tempo de resposta 1ms.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;1.299,00</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🖥️">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hardware -->
+          <article class="product-card reveal" data-category="hardware">
+            <div class="product-badge sale">-20%</div>
+            <img src="../src/assets/GPU RX 7800 XT.jpg" alt="GPU RX 7800 XT" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Hardware</p>
+              <h3 class="product-name">GPU RX 7800 XT</h3>
+              <p class="product-desc">16GB GDDR6, Ray Tracing nativo, perfeita para 1440p e até 4K.</p>
+              <div class="product-footer">
+                <div>
+                  <span class="product-price-old">R$&nbsp;3.799,00</span>
+                  <span class="product-price">R$&nbsp;3.049,00</span>
+                </div>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🎮">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-category="hardware">
+            <img src="../src/assets/Processador Ryzen 7 7700X.jpg" alt="Processador Ryzen 7 7700X" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Hardware</p>
+              <h3 class="product-name">Processador Ryzen 7 7700X</h3>
+              <p class="product-desc">8 núcleos / 16 threads, 4.5 GHz base, 5.4 GHz boost, 105W TDP.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;1.849,00</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="💻">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2" data-category="hardware">
+            <div class="product-badge new">Novo</div>
+            <img src="../src/assets/SSD NVMe 2TB Gen4.jpg" alt="SSD NVMe 2TB Gen4" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Hardware</p>
+              <h3 class="product-name">SSD NVMe 2TB Gen4</h3>
+              <p class="product-desc">Velocidade de leitura 7.300 MB/s, escrita 6.800 MB/s, formato M.2.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;699,00</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🔧">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Jogos -->
+          <article class="product-card reveal" data-category="jogo">
+            <img src="../src/assets/CyberQuest 2077 Remastered.png" alt="CyberQuest 2077 Remastered" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Jogo</p>
+              <h3 class="product-name">CyberQuest 2077 Remastered</h3>
+              <p class="product-desc">RPG de mundo aberto futurista. Mídia física + DLC exclusiva.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;149,90</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="⚔️">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-category="jogo">
+            <div class="product-badge sale">Promoção</div>
+            <img src="../src/assets/Pack Indie Gamer Vol.3.webp" alt="Pack Indie Gamer Vol.3" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Jogo</p>
+              <h3 class="product-name">Pack Indie Gamer Vol.3</h3>
+              <p class="product-desc">5 jogos indie selecionados. Ação, aventura, roguelike e puzzle.</p>
+              <div class="product-footer">
+                <div>
+                  <span class="product-price-old">R$&nbsp;120,00</span>
+                  <span class="product-price">R$&nbsp;59,90</span>
+                </div>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🏆">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Áudio -->
+          <article class="product-card reveal" data-category="audio">
+            <div class="product-badge">Top</div>
+            <img src="../src/assets/Headset 7.1 Surround.webp" alt="Headset 7.1 Surround HX-900" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Áudio</p>
+              <h3 class="product-name">Headset 7.1 Surround HX-900</h3>
+              <p class="product-desc">Som surround virtual 7.1, microfone retrátil com noise-cancelling, almofadas memory foam.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;279,00</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🎧">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-category="audio">
+            <img src="../src/assets/Caixa de Som 2.1 Bass Pro.jpg" alt="Caixa de Som 2.1 Bass Pro" class="product-img" loading="lazy" />
+            <div class="product-info">
+              <p class="product-category">Áudio</p>
+              <h3 class="product-name">Caixa de Som 2.1 Bass Pro</h3>
+              <p class="product-desc">Sistema 2.1 com subwoofer dedicado, 60W RMS, conexão USB e P2.</p>
+              <div class="product-footer">
+                <span class="product-price">R$&nbsp;399,90</span>
+                <button class="btn btn-outline btn-sm btn-buy" data-icon="🔊">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="neon-line-padded" />
+
+    <!-- ══════════════════════════════════════
+         TABELA DE PREÇOS
+    ══════════════════════════════════════ -->
+    <section aria-labelledby="tabela-title">
+      <div class="section-inner">
+
+        <h2 class="section-title" id="tabela-title">
+          Tabela de <span class="accent">Preços</span>
+        </h2>
+        <div class="divider"></div>
+        <p class="section-sub">Comparativo rápido dos produtos mais vendidos</p>
+
+        <div class="table-wrapper reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Parcelas</th>
+                <th>Estoque</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mouse RGB Pro X</td>
+                <td><span class="tag-cat">Periférico</span></td>
+                <td>R$&nbsp;189,90</td>
+                <td>12× R$&nbsp;15,82</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>Teclado Mecânico NX-500</td>
+                <td><span class="tag-cat">Periférico</span></td>
+                <td>R$&nbsp;349,00</td>
+                <td>12× R$&nbsp;29,08</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>Monitor 144Hz 1ms 27"</td>
+                <td><span class="tag-cat">Periférico</span></td>
+                <td>R$&nbsp;1.299,00</td>
+                <td>12× R$&nbsp;108,25</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>GPU RX 7800 XT</td>
+                <td><span class="tag-cat">Hardware</span></td>
+                <td>R$&nbsp;3.049,00</td>
+                <td>12× R$&nbsp;254,08</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>Ryzen 7 7700X</td>
+                <td><span class="tag-cat">Hardware</span></td>
+                <td>R$&nbsp;1.849,00</td>
+                <td>12× R$&nbsp;154,08</td>
+                <td>⚠️ Poucas unidades</td>
+              </tr>
+              <tr>
+                <td>SSD NVMe 2TB Gen4</td>
+                <td><span class="tag-cat">Hardware</span></td>
+                <td>R$&nbsp;699,00</td>
+                <td>12× R$&nbsp;58,25</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>Headset 7.1 HX-900</td>
+                <td><span class="tag-cat">Áudio</span></td>
+                <td>R$&nbsp;279,00</td>
+                <td>12× R$&nbsp;23,25</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>CyberQuest 2077 Remastered</td>
+                <td><span class="tag-cat">Jogo</span></td>
+                <td>R$&nbsp;149,90</td>
+                <td>6× R$&nbsp;24,98</td>
+                <td>✅ Disponível</td>
+              </tr>
+              <tr>
+                <td>Pack Indie Gamer Vol.3</td>
+                <td><span class="tag-cat">Jogo</span></td>
+                <td>R$&nbsp;59,90</td>
+                <td>3× R$&nbsp;19,97</td>
+                <td>⚠️ Últimas unidades</td>
+              </tr>
+              <tr>
+                <td>Caixa de Som 2.1 Bass Pro</td>
+                <td><span class="tag-cat">Áudio</span></td>
+                <td>R$&nbsp;399,90</td>
+                <td>12× R$&nbsp;33,32</td>
+                <td>✅ Disponível</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROMOÇÕES com Countdown
+    ══════════════════════════════════════ -->
+    <section aria-labelledby="promo-title">
+      <div class="section-inner">
+
+        <div class="promo-section reveal">
+          <p class="promo-tag">🔥 OFERTA RELÂMPAGO</p>
+          <h2 class="section-title" id="promo-title">
+            Até <span class="accent">40% OFF</span> em Periféricos
+          </h2>
+          <p class="promo-desc">
+            Aproveite nossa maior promoção do semestre. Descontos exclusivos
+            em mais de 50 produtos selecionados. A oferta acaba em:
+          </p>
+
+          <!-- Countdown timer -->
+          <div class="promo-timer" aria-label="Tempo restante da promoção">
+            <div class="timer-block">
+              <span class="timer-num" id="timer-days">00</span>
+              <p class="timer-label">Dias</p>
+            </div>
+            <div class="timer-block">
+              <span class="timer-num" id="timer-hours">00</span>
+              <p class="timer-label">Horas</p>
+            </div>
+            <div class="timer-block">
+              <span class="timer-num" id="timer-mins">00</span>
+              <p class="timer-label">Minutos</p>
+            </div>
+            <div class="timer-block">
+              <span class="timer-num" id="timer-secs">00</span>
+              <p class="timer-label">Segundos</p>
+            </div>
+          </div>
+
+          <a href="contato.html" class="btn btn-primary promo-cta">
+            🛒 Aproveitar Promoção
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Arena<span>Gamer</span></a>
+          <p>Sua Arena Gamer de confiança desde 2018. Hardware, periféricos e games com a melhor relação custo-benefício do mercado.</p>
+          <div class="social-links" aria-label="Redes sociais">
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="Discord">💬</a>
+            <a href="#" class="social-link" aria-label="Twitch">🎮</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="portifolio.html">Periféricos</a></li>
+            <li><a href="portifolio.html">Hardware</a></li>
+            <li><a href="portifolio.html">Jogos</a></li>
+            <li><a href="portifolio.html">Promoções</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <div class="footer-contact-item">📞 (11) 9 9999-0000</div>
+          <div class="footer-contact-item">📧 contato@arenagamer.com.br</div>
+          <div class="footer-contact-item">📍 São Paulo, SP</div>
+          <div class="footer-contact-item">⏰ Seg–Sex 9h–18h</div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arena Gamer - Direitos Reservados.</p>
+        <p>Desenvolvido para <a href="#">FIAP — Web/Front CP3</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
