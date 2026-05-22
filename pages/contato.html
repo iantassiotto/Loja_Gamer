@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com a Arena Gamer. Atendimento rápido por formulário, email ou telefone." />
+  <title>Contato | Arena Gamer</title>
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HEADER / NAV
+  ══════════════════════════════════════ -->
+  <header>
+    <div class="nav-container">
+
+      <a href="../index.html" class="logo">Arena<span>Gamer</span></a>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="portifolio.html">Portifólio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="cart-btn" aria-label="Carrinho de compras" title="Clique para zerar o carrinho">
+          🛒
+          <span class="cart-count hidden" aria-live="polite">0</span>
+        </button>
+        <button class="theme-toggle" aria-label="Alternar tema">☀️</button>
+        <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <h1>Fale <span class="text-cyan">Conosco</span></h1>
+      <p>Estamos aqui para ajudar. Resposta garantida em até 24 horas.</p>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         CONTATO PRINCIPAL
+    ══════════════════════════════════════ -->
+    <section aria-labelledby="contato-title">
+      <div class="section-inner">
+
+        <h2 class="section-title" id="contato-title">
+          Envie sua <span class="accent">Mensagem</span>
+        </h2>
+        <div class="divider"></div>
+
+        <div class="contato-wrapper">
+
+          <!-- Informações de contato -->
+          <aside class="contato-info reveal">
+            <h3>Atendimento ao Cliente</h3>
+            <p>
+              Nossa equipe de suporte é formada por gamers de verdade.
+              Entendemos suas necessidades e estamos prontos para ajudar
+              com dúvidas sobre produtos, pedidos, garantias e muito mais.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Telefone</strong>
+                <span>(11) 9 9999-0000</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>E-mail</strong>
+                <span>contato@arenagamer.com.br</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Endereço</strong>
+                <span>Av. Paulista, 1234 — São Paulo, SP</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">⏰</div>
+              <div>
+                <strong>Horário de Atendimento</strong>
+                <span>Seg–Sex 9h–18h | Sáb 9h–13h</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">💬</div>
+              <div>
+                <strong>Discord</strong>
+                <span>discord.gg/arenagamer</span>
+              </div>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="social-block">
+              <p class="social-block-label">Siga-nos</p>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram" title="Instagram">📸</a>
+                <a href="#" class="social-link" aria-label="Twitter"   title="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="YouTube"   title="YouTube">▶️</a>
+                <a href="#" class="social-link" aria-label="Discord"   title="Discord">💬</a>
+                <a href="#" class="social-link" aria-label="Twitch"    title="Twitch">🎮</a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Formulário -->
+          <div class="reveal reveal-delay-2">
+            <div class="form-card">
+              <h3>Enviar mensagem</h3>
+
+              <form id="contact-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Nome completo *</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="nome"
+                      placeholder="Seu nome"
+                      autocomplete="name"
+                    />
+                    <p class="field-error" id="err-name" role="alert"></p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-email">E-mail *</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      placeholder="seu@email.com"
+                      autocomplete="email"
+                    />
+                    <p class="field-error" id="err-email" role="alert"></p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject">Assunto *</label>
+                  <select id="contact-subject" name="assunto">
+                    <option value="">Selecione um assunto...</option>
+                    <option value="pedido">Dúvida sobre pedido</option>
+                    <option value="produto">Informação sobre produto</option>
+                    <option value="garantia">Garantia / Troca</option>
+                    <option value="suporte">Suporte técnico</option>
+                    <option value="parceria">Parceria comercial</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                  <p class="field-error" id="err-subject" role="alert"></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-msg">Mensagem *</label>
+                  <textarea
+                    id="contact-msg"
+                    name="mensagem"
+                    placeholder="Descreva sua dúvida ou solicitação em detalhes..."
+                    rows="5"
+                  ></textarea>
+                  <p class="field-error" id="err-msg" role="alert"></p>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  🚀 Enviar Mensagem
+                </button>
+
+              </form>
+
+              <!-- Mensagem de sucesso (oculta por padrão) -->
+              <div id="form-success" class="success-message" role="alert" aria-live="polite">
+                ✅ Mensagem enviada com sucesso! Nossa equipe entrará em contato em até 24 horas.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FAQ rápido
+    ══════════════════════════════════════ -->
+    <section aria-labelledby="faq-title" class="section-no-pt">
+      <div class="section-inner">
+
+        <hr class="neon-line" />
+
+        <h2 class="section-title" id="faq-title">
+          Perguntas <span class="accent">Frequentes</span>
+        </h2>
+        <div class="divider"></div>
+
+        <div class="features-grid no-mt">
+
+          <article class="feature-card card-left reveal">
+            <span class="feature-icon">📦</span>
+            <h3>Prazo de entrega?</h3>
+            <p>Para capitais, entregamos em até 48h. Para outras regiões, o prazo pode variar de 3 a 7 dias úteis.</p>
+          </article>
+
+          <article class="feature-card card-left reveal reveal-delay-1">
+            <span class="feature-icon">🔄</span>
+            <h3>Política de troca?</h3>
+            <p>Trocas em até 30 dias sem complicação. Produto com defeito tem suporte pela garantia do fabricante.</p>
+          </article>
+
+          <article class="feature-card card-left reveal reveal-delay-2">
+            <span class="feature-icon">💳</span>
+            <h3>Formas de pagamento?</h3>
+            <p>Cartão de crédito em até 12× sem juros, Pix com 5% de desconto e boleto bancário.</p>
+          </article>
+
+          <article class="feature-card card-left reveal reveal-delay-3">
+            <span class="feature-icon">🛡️</span>
+            <h3>Os produtos têm garantia?</h3>
+            <p>Sim! Todos os produtos possuem no mínimo 12 meses de garantia de fábrica.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Arena<span>Gamer</span></a>
+          <p>Sua Arena Gamer de confiança desde 2018. Hardware, periféricos e games com a melhor relação custo-benefício do mercado.</p>
+          <div class="social-links" aria-label="Redes sociais">
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="Discord">💬</a>
+            <a href="#" class="social-link" aria-label="Twitch">🎮</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="portifolio.html">Periféricos</a></li>
+            <li><a href="portifolio.html">Hardware</a></li>
+            <li><a href="portifolio.html">Jogos</a></li>
+            <li><a href="portifolio.html">Promoções</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <div class="footer-contact-item">📞 (11) 9 9999-0000</div>
+          <div class="footer-contact-item">📧 contato@arenagamer.com.br</div>
+          <div class="footer-contact-item">📍 São Paulo, SP</div>
+          <div class="footer-contact-item">⏰ Seg–Sex 9h–18h</div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arena Gamer - Direitos Reservados.</p>
+        <p>Desenvolvido para <a href="#">FIAP — Web/Front CP3</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
