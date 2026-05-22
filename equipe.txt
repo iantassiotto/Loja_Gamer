@@ -1,0 +1,15 @@
+Equipe Ian - Loja Gamer | FIAP - Web Development & Front-end Design - CP3
+==============================
+
+Integrantes:
+- Ian Felipe Tassiotto Gomes - RM: 570812
+
+GitHub Pages:
+https://[seu-usuario].github.io/CP3-web-front/
+
+Repositório GitHub:
+https://github.com/iantassiotto/Loja_Gamer
+
+Turma: 1ESPG
+Professor: Wellington Cidade
+Data de entrega: 24/05/2026
