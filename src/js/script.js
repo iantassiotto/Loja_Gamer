@@ -330,7 +330,9 @@ function initCart() {
   const items = [];
 
   function formatBRL(value) {
-    return 'R$ ' + value.toFixed(2).replace('.', ',');
+    return 'R$ ' + value.toFixed(2)
+      .replace('.', ',')
+      .replace(/\B(?=(\d{3})+(?!\d))/, '.');
   }
 
   function parsePrice(text) {
