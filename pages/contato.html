@@ -27,7 +27,7 @@
       </nav>
 
       <div class="nav-controls">
-        <button class="cart-btn" aria-label="Carrinho de compras" title="Clique para zerar o carrinho">
+        <button class="cart-btn" aria-label="Carrinho de compras" title="Ver carrinho">
           🛒
           <span class="cart-count hidden" aria-live="polite">0</span>
         </button>
@@ -303,6 +303,26 @@
 
     </div>
   </footer>
+
+  <!-- ══════════════════════════════════════
+       CARRINHO — Drawer lateral
+  ══════════════════════════════════════ -->
+  <div class="cart-overlay" hidden></div>
+  <aside class="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true" hidden>
+    <header class="cart-drawer-header">
+      <h2>Seu carrinho</h2>
+      <button class="cart-close" aria-label="Fechar carrinho">✕</button>
+    </header>
+    <ul class="cart-items" aria-live="polite"></ul>
+    <p class="cart-empty">Seu carrinho está vazio.</p>
+    <footer class="cart-drawer-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong class="cart-total-value">R$ 0,00</strong>
+      </div>
+      <button class="btn btn-primary cart-checkout" disabled>Finalizar compra</button>
+    </footer>
+  </aside>
 
   <script src="../src/js/script.js"></script>
 </body>
